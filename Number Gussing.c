@@ -5,10 +5,9 @@
 int main() {
     int number, guess, attempts = 0;
     srand(time(0));  // initialize random
-    number = rand() % 100 + 1; // random 1-100
-
+    number = rand() % 100 + 1; // random 1-10 
     printf("Guess the number (1 to 100):\n");
-
+    
     do {
         scanf("%d", &guess);
         attempts++;
